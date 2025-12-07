@@ -48,6 +48,6 @@ jobs:
           # 注意：镜像名称必须全部小写
           tags: |
             ghcr.io/${{ github.repository_owner }}/ci-cd-practice:latest
-            ghcr.io/${{ github.repository_owner }}/ci-cd-practice:${{ substring(github.sha, 0, 7) }}
+            ghcr.io/${{ github.repository_owner }}/ci-cd-practice:${{github.sha}}
           
 
